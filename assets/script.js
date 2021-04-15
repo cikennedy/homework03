@@ -188,7 +188,7 @@ return passwordCriteria;
 }
 
 //create aa function to get a random string from the arrays listed 
-function randomCharacter(arr) {
+function getRandom(arr) {
   var randomInd = Math.floor(Math.random() * arr.length);
   var randomString = arr[randomInd];
   return randomString;
