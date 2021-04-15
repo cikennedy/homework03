@@ -10,7 +10,8 @@ This is an application that enables the user within an organization to generate 
 ## Usage
 
 ![Generator Homepage](./assets/index.png)
-![Generated Password](./assets/Prompt.png)
+![User Prompt](./assets/Prompt.png)
+![Generated Password](./assets/Password.png)
 
 ## Credits
 
