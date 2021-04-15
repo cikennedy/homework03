@@ -1,3 +1,5 @@
+//Create arrays for password characters
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
