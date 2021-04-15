@@ -145,13 +145,46 @@ function passwordPrompts() {
     return;
   }
 
-  //if statement for if not a number
+  //if statement to check if the entered text is a number 
   if (Number.isInteger(length) == false) {
     alert("Must enter a number");
     return;
   }
 
+//create boolean confirm prompts for the user criteria. Names based on above arrays
+var useNumberCharacters = confirm(
+  "OK to use numbers"
+);
+var useUppercaseCharacters = confirm(
+  "OK to use uppercase characters"
+);
 
+var useLowercaseCharacters = confirm(
+  "OK to use lowercase characters"
+);
+
+var useSpecialCharacters = confirm(
+  "OK to use special characters"
+);
+
+//user must select at least one type of character or else an alert takes place
+if (
+  useNumberCharacters === false && useUppercaseCharacters === false && 
+  useLowercaseCharacters === false && useSpecialCharacters === false
+) {alert("Select at least one type of character");
+return;
+}
+
+//user input and information
+const passwordCriteria = {
+  length: length,
+  useNumberCharacters: useNumberCharacters,
+  useUppercaseCharacters: useUppercaseCharacters,
+  useLowercaseCharacters: useLowercaseCharacters,
+  useSpecialCharacters: useSpecialCharacters
+};
+
+return passwordCriteria;
 }
 
 
