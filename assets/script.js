@@ -18,7 +18,7 @@ THEN the password is either displayed in an alert or written to the page
 
 //Create arrays for password characters
 //all numbers
-const numberCharacters = [
+var numberCharacters = [
   `1`, 
   `2`, 
   `3`, 
@@ -31,7 +31,7 @@ const numberCharacters = [
 ];
 
 //all uppercase characters 
-const uppercaseCharacters = [
+var uppercaseCharacters = [
   `A`, 
   `B`, 
   `C`, 
@@ -61,7 +61,7 @@ const uppercaseCharacters = [
 ];
 
 //all lowercase characters
-const lowercaseCharacters = [
+var lowercaseCharacters = [
   `a`, 
   `b`, 
   `c`, 
@@ -93,7 +93,7 @@ const lowercaseCharacters = [
 //the special characters (other than space) listed on the credited link
 //side note - ran into an error using backtick with the right curly bracket. 
 //fixed with using regular double quotes. look into this! 
-const specialCharacters = [
+var specialCharacters = [
   `!`, 
   `"`, 
   `#`, 
@@ -241,12 +241,6 @@ function makePassword() {
   //create a string based on the result 
   return result.join('');
 }
-
-
-
-
-
-
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");

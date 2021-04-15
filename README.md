@@ -6,15 +6,13 @@ This is an application that enables the user within an organization to generate 
 ## Table of Contents
 * [Usage](#usage)
 * [Credits](#credits)
-* [License](#license)
 
 ## Usage
 
-![Generator Homepage](.png path)
-![Generated Password](.png path)
+![Generator Homepage](./assets/index.png)
+![Generated Password](./assets/Prompt.png)
 
 ## Credits
 
 [OWASP - Password Special Characters](https://owasp.org/www-community/password-special-characters)
 
-## License
