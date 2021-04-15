@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* change 'your secure password' box to be larger, dotted border, curved edges. Change font for both
+"Password Generator" and "Generate a Password" - center Password Generator. Generate Password button
+should have white text, red background, oval shape (curved edges) */ 
+
 html,
 body,
 .wrapper {
