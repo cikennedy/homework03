@@ -15,4 +15,6 @@ This is an application that enables the user within an organization to generate 
 
 ## Credits
 
+[OWASP - Password Special Characters](https://owasp.org/www-community/password-special-characters)
+
 ## License
