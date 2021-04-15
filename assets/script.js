@@ -187,7 +187,14 @@ const passwordCriteria = {
 return passwordCriteria;
 }
 
-//Create function to make password
+//create aa function to get a random string from the arrays listed 
+function randomCharacter(arr) {
+  var randomInd = Math.floor(Math.random() * arr.length);
+  var randomString = arr[randomInd];
+  return randomString;
+}
+
+//Create function to actually make the password based on the selected criteria 
 function makePassword() {
   var criteria = passwordPrompts();
 
