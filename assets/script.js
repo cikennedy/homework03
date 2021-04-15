@@ -187,6 +187,59 @@ const passwordCriteria = {
 return passwordCriteria;
 }
 
+//Create function to make password
+function makePassword() {
+  var criteria = passwordPrompts();
+
+  //result in an array
+  var result = [];
+  //possibilities in an array 
+  var possibilities = [];
+  //selected criteria characters in an array 
+  var selectedCriteria = [];
+
+  //Create conditional statements for all above arrays to use characters for the selected criteria
+
+  if (criteria.useNumberCharacters) {
+    possibilities = possibilities.concat(numberCharacters);
+    selectedCriteria.push(getRandom(numberCharacters));
+  }
+
+  if (criteria.useUppercaseCharacters) {
+    possibilities = possibilities.concat(uppercaseCharacters);
+    selectedCriteria.push(getRandom(uppercaseCharacters));
+  }
+
+  if (criteria.useLowercaseCharacters) {
+    possibilities = possibilities.concat(lowercaseCharacters);
+    selectedCriteria.push(getRandom(lowercaseCharacters));
+  }
+
+  if (criteria.useSpecialCharacters) {
+    possibilities = possibilities.concat(specialCharacters);
+    selectedCriteria.push(getRandom(specialCharacters));
+  }
+
+  //for loop for the random possibilites 
+  for (var i=0; i<criteria.length; i++) {
+    var possibilities = getRandom(possibilities);
+    result.push(possibilities);
+  }
+
+  //use at least one of the criteria 
+  for (var i=0; i<selectedCriteria.length; i++) {
+    result[i] = selectedCriteria[i];
+  }
+
+  //create a string based on the result 
+  return result.join('');
+}
+
+
+
+
+
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
