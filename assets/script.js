@@ -132,14 +132,26 @@ const specialCharacters = [
 //THEN I am presented with a series of prompts for password criteria
 
 function passwordPrompts() {
-  //use parseInt to return an integer from a string
+  //use parseInt to return an integer from a string that the user enters
   const length = parseInt(
     //use window prompt() method to display a prompt box
     //with the specificed 8-128 
     prompt("Enter your desired password length as a number between 8 and 128")
   );
+  //below add if statements for validation - alerts for invalid information entered  
+  //if statement for if the length does not meet the previously stated requirements
+  if (length > 128 || length < 8) {
+    alert("Password length must be between 8 and 128");
+    return;
+  }
 
-  
+  //if statement for if not a number
+  if (Number.isInteger(length) == false) {
+    alert("Must enter a number");
+    return;
+  }
+
+
 }
 
 
