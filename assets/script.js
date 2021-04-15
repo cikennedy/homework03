@@ -58,7 +58,7 @@ const uppercaseCharacters = [
   `X`, 
   `Y`, 
   `Z`
-]
+];
 
 //all lowercase characters
 const lowercaseCharacters = [
@@ -126,6 +126,22 @@ const specialCharacters = [
   "}",
   `~`
 ];
+
+//write function for the following:
+//WHEN I click the button to generate a password
+//THEN I am presented with a series of prompts for password criteria
+
+function passwordPrompts() {
+  //use parseInt to return an integer from a string
+  const length = parseInt(
+    //use window prompt() method to display a prompt box
+    //with the specificed 8-128 
+    prompt("Enter your desired password length as a number between 8 and 128")
+  );
+
+  
+}
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
